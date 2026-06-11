@@ -16,12 +16,21 @@ const instrument = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bellahøjcykler.dk"),
   title: {
     default: "Bellahøj Cykler – Din lokale cykelhandler i Brønshøj",
     template: "%s | Bellahøj Cykler",
   },
   description:
     "Bellahøj Cykler på Frederikssundsvej i Brønshøj. Salg af cykler og elcykler, professionelt cykelværksted og cykeludlejning. Over 70 års erfaring.",
+  openGraph: {
+    type: "website",
+    locale: "da_DK",
+    siteName: "Bellahøj Cykler",
+    title: "Bellahøj Cykler – Din lokale cykelhandler i Brønshøj",
+    description:
+      "Salg af cykler og elcykler, professionelt cykelværksted og cykeludlejning i Brønshøj. Over 70 års erfaring.",
+  },
 };
 
 export default function RootLayout({
